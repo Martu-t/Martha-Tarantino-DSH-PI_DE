@@ -53,25 +53,8 @@ lat: Coordenadas de latitud de la ubicación del comercio
 lng: Coordenadas de longitud de la ubicación del comercio
 ~~~
 
-## Tips:  
-- Analizar en que instancia de su ETL van a realizar la limpieza y joins de los datasets.  
-- Comentar el código en todo momento.  
-- Clonar el repositorio, no forkearlo.  
-- Denle importancia al README de su trabajo, va a ser su carta de presentación, tanto para con nosotros, como para las empresas que se fijen en su perfil.  
-- SUPERTIP: ¡Es el mejor momento para que comiencen a trabajar/familiarizarse con el uso de Github en sus proyectos!  
-Expliquen su proyecto, agreguen diagramas de flujo del pipeline y lo que consideren necesario ¡Será parte de su portafolio de proyectos! 
 
-![image](https://www.incworx.com/wp-content/uploads/2021/12/what-is-etl-used-for-1080x675.jpg)
+![image](https://i.ibb.co/4F2F0tC/Diagrama-Pipeline.png)
 
-# Muy Importante -> VIDEO DEMO
-El video no deberá durar más de 5 minutos, en el mismo, deberán mostrar y explicar el proceso de extracción, transformación y carga de los datos, fundamentación de las herramientas elegidas en conjunto a la demora del trabajo. Por otra parte, deberán exponer la carga incremental asignada.  
-En caso de que algún proceso genere tiempo muerto dentro de la grabación, el mismo podrá ser recortado o acelerado para agilizar la exposición.  
-  
-La grabación deberá ser subida a YouTube en una calidad igual o superior a la correcta legibilidad del código, recomendamos utilizar capturadoras como Loom, Zoom u otras que poseen entradas de audio. No se permite utilizar grabadoras como el telefono, cámaras, etc. Otro paso a seguir para evitar inconvenientes en la corrección es visitar el link donde se produjo la carga del archivo en modo incógnito para asegurar su correcta publicación. 
+![image](https://i.ibb.co/wg7XKZ6/Captura-de-Pantalla-2022-10-27-a-la-s-10-19-07.png)
 
-La descripción del video cargado a YouTube y el nombre del archivo cargado al form deberá ser: NOMBRE Y APELLIDO ESTUDIANTE - DSH - PI_DE  
-Ejemplo -> Fulanitode Tal - DSH - PI_DE
-
-### ¡Mucha Suerte!  
-
-<img src = "https://user-images.githubusercontent.com/96025598/188937586-28575753-fbd6-42de-beca-81ae35b659e0.gif" height = 300>
