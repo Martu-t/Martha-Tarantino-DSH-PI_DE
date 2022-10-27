@@ -23,3 +23,15 @@ FOR EACH ROW
 INSERT INTO venta_registros (cantidadRegistros, usuario, fecha)
 VALUES ((SELECT count(*) FROM fact_venta), current_user(), now());
 
+
+/* No se crearán PK y FK ya que primero habría que normalizar las tablas o agregar una columna nueva de PK y que sï no, 
+habría un error al ingestar nuevos datos con misma PK 
+para generar mejor eficiencia en las consultas, se hara un indice para la columna producto_id y sucursal_id
+*/
+
+ALTER TABLE venta ADD INDEX(producto_id);
+ALTER TABLE venta ADD INDEX(sucursal_id);
+
+SELECT AVG(precio) AS precio_promedio
+FROM venta WHERE
+sucursal_id = '9-1-688';
