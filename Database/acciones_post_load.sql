@@ -9,6 +9,25 @@ use supermercados;
 -- TRUNCATE TABLE sucursal;
 -- TRUNCATE TABLE venta;
 
+-- acordate de crear las PK
+/*
+-- ALTER TABLE ordenes ADD ticket VARCHAR(50) NOT NULL;
+ALTER TABLE venta ADD CONSTRAINT fk_productoid FOREIGN KEY (producto_id) REFERENCES producto(Id) ON UPDATE CASCADE ON DELETE CASCADE;
+ALTER TABLE venta ADD CONSTRAINT fk_sucursal FOREIGN KEY (sucursal_id) REFERENCES sucursal(Id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- hacer cambios sin tener en cuenta las PK y FK
+SET FOREIGN_KEY_CHECKS = 0;
+
+truncate producto;
+truncate sucursal;
+truncate venta;
+
+drop table producto;
+drop table sucursal;
+drop table venta;
+
+SET FOREIGN_KEY_CHECKS = 1; */
+
 -- Creamos la tabla que auditará a los usuarios que realizan cambios
 -- sirve para controlar luego de las cargas
 
