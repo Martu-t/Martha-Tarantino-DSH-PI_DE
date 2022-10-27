@@ -1,8 +1,13 @@
 use supermercados;
 
+/* comandos utiles para manipar las tablas */
 -- DROP TABLE IF EXISTS producto;
 -- DROP TABLE IF EXISTS venta;
 -- DROP TABLE IF EXISTS sucursal;
+
+-- TRUNCATE TABLE producto;
+-- TRUNCATE TABLE sucursal;
+-- TRUNCATE TABLE venta;
 
 -- Creamos la tabla que auditará a los usuarios que realizan cambios
 -- sirve para controlar luego de las cargas

@@ -3,31 +3,21 @@
 ![image](https://user-images.githubusercontent.com/108296379/182138583-9011699a-f009-4454-885e-80dca182b6c8.png)
 
 
-## ¡ Bienvenidos a LABS !
-En este primer proyecto proponemos realizar un proceso de ETL (extract, transform and load) a partir de un conjunto de datos que se enfocarán en una misma perspectiva de negocio. Los datos vienen de diversas fuentes de relevamiento de precios en distintos mercados. Deberán trabajar los diferentes tipos de archivos para llevarlos a una misma extensión y, una vez finalizada esta etapa, deberán crear los joins necesarios con el objetivo de crear un DER y dejarlos almacenados en un archivo con extensión .db. Por último, todo su trabajo deberá contemplar la carga incremental del archivo "precios_semana_20200518.txt".
+##  Propuesto por Henry en el Marco de LABS 
+¨En este primer proyecto proponemos realizar un proceso de ETL (extract, transform and load) a partir de un conjunto de datos que se enfocarán en una misma perspectiva de negocio. Los datos vienen de diversas fuentes de relevamiento de precios en distintos mercados. Deberán trabajar los diferentes tipos de archivos para llevarlos a una misma extensión y, una vez finalizada esta etapa, deberán crear los joins necesarios con el objetivo de crear un DER y dejarlos almacenados en un archivo con extensión .db. Por último, todo su trabajo deberá contemplar la carga incremental del archivo "precios_semana_20200518.txt".
 
-En esta etapa de la academia, verán siempre la palabra "Plus", que hará referencia a los puntos extra disponibles para cada trabajo. Es muy importante que estos sean obviados hasta completar los requerimientos mínimos (deben entregar siempre el producto mínimo viable, MVP, que hace lo mínimo que pedimos), pero siempre recomendamos tratar de completar los plus/adicionales aún después de que el trabajo haya sido entregado, ya que generarán valor agregado a su portfolio.  
+En esta etapa de la academia, verán siempre la palabra "Plus", que hará referencia a los puntos extra disponibles para cada trabajo. Es muy importante que estos sean obviados hasta completar los requerimientos mínimos (deben entregar siempre el producto mínimo viable, MVP, que hace lo mínimo que pedimos), pero siempre recomendamos tratar de completar los plus/adicionales aún después de que el trabajo haya sido entregado, ya que generarán valor agregado a su portfolio.¨
     
-## Entrega
-La entrega se hará mediante en dos canales:
-  - Entrega del archivo final, la cuál se hará a partir de un form.
-  - Video demostrativo y explicativo de <strong> no más de 5 minutos </strong>. 
-
-## Pasos a seguir (requerimientos mínimos)
+## Objetivos alcanzados
 - Procesar los diferentes datasets. 
-- Crear un archivo DB con el motor de SQL que quieran. Pueden usar SQLAlchemy por ejemplo.
-- Realizar en draw.io un diagrama de flujo de trabajo del ETL y explicarlo en vivo.
-- Realizar una carga incremental de los archivos que se tienen durante el video.
-- Realizar una query en el video, para comprobar el funcionamiento de todo su trabajo. La query a armar es la siguiente: Precio promedio de la sucursal 9-1-688.
-
-## Plus  
-En este proyecto, será un plus trabajar con herramientas como Docker, Airflow, NiFi u otras herramientas que optimicen y automaticen el proceso de la consigna, programando las cargas incrementales para realizarse con cierta frecuencia. Recuerden que los plus siempre son totalmente opcionales, va a depender de ustedes si lo quieren realizar o no ¡Desafíense a lograrlo!
+- Crear un archivo SQL con las tablas (equivalente a .DB). Se adjunta el archivo en 
+- Realizar en draw.io un diagrama de flujo de trabajo del ETL. El archivo se encuentra adjunto como ¨Diagrama_flujo.drawio¨
+- Se realiza una carga incremental final que es el último paso del notebook.
+- Se hicieron pruebas luego de la carga en el gestor de base de datos Workbench y las consultas 
 
 ## Glosario del trabajo:
 
 ### Diccionario de datos
-
-<sub>Spoiler: hay varias inconsistencias (intencionales) en estos archivos.</sub>
 
 Archivos con los relevamientos semanales (ej: precio_semana_20200518.txt)
 ~~~
