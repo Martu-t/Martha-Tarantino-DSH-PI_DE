@@ -23,4 +23,3 @@ FOR EACH ROW
 INSERT INTO venta_registros (cantidadRegistros, usuario, fecha)
 VALUES ((SELECT count(*) FROM fact_venta), current_user(), now());
 
-select avg(precio) from venta;
