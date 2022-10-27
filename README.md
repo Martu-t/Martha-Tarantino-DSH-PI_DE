@@ -4,7 +4,17 @@
 
 
 ##  Propuesta hecha por Henry en el Marco de LABS 
-¨En este primer proyecto proponemos realizar un proceso de ETL (extract, transform and load) a partir de un conjunto de datos que se enfocarán en una misma perspectiva de negocio. Los datos vienen de diversas fuentes de relevamiento de precios en distintos mercados. Deberán trabajar los diferentes tipos de archivos para llevarlos a una misma extensión y, una vez finalizada esta etapa, deberán crear los joins necesarios con el objetivo de crear un DER y dejarlos almacenados en un archivo con extensión .db. Por último, todo su trabajo deberá contemplar la carga incremental del archivo "precios_semana_20200518.txt".
+Bienvenido a este proyecto. El mismo fue realizado en base al proyecto propuesto por Henry en el Bootcamp de DataSciente. 
+El mismo plantea el siguiente problema: ¨En este primer proyecto proponemos realizar un proceso de ETL (extract, transform and load) a partir de un conjunto de datos que se enfocarán en una misma perspectiva de negocio. Los datos vienen de diversas fuentes de relevamiento de precios en distintos mercados. Deberán trabajar los diferentes tipos de archivos para llevarlos a una misma extensión y, una vez finalizada esta etapa, deberán crear los joins necesarios con el objetivo de crear un DER y dejarlos almacenados en un archivo con extensión .db. Por último, todo su trabajo deberá contemplar la carga incremental del archivo "precios_semana_20200518.txt".
+En este repositorio encontrarán todo lo necesario para abordar la próblematica y darle una solución.
+Tener en cuenta que sí se desea clonar/forkear este repositorio, se debe instalar Python y varias dependencias, cómo así también un motor de base de datos. 
+
+## Herramientas utilizadas:
+
+ - Python y sus librerías, cómo Pandas y SQLalchemy
+ - Gestor SQL: MySQL
+ - Jupyter Notebook 
+
 
 ## Flujo de trabajo
 
@@ -43,3 +53,4 @@ Una vez cargados todos los datos en sus tablas, se pueden hacer algunas queries 
 - Realizar en draw.io un diagrama de flujo de trabajo del ETL. El archivo se encuentra adjunto como ¨Diagrama_flujo.drawio¨ y se muestra arriba.
 - Se realiza una carga incremental final que es el último paso del notebook.
 - Se hicieron pruebas luego de la carga en el gestor de base de datos Workbench y las consultas 
+
