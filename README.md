@@ -6,8 +6,6 @@
 ##  Propuesta hecha por Henry en el Marco de LABS 
 ¨En este primer proyecto proponemos realizar un proceso de ETL (extract, transform and load) a partir de un conjunto de datos que se enfocarán en una misma perspectiva de negocio. Los datos vienen de diversas fuentes de relevamiento de precios en distintos mercados. Deberán trabajar los diferentes tipos de archivos para llevarlos a una misma extensión y, una vez finalizada esta etapa, deberán crear los joins necesarios con el objetivo de crear un DER y dejarlos almacenados en un archivo con extensión .db. Por último, todo su trabajo deberá contemplar la carga incremental del archivo "precios_semana_20200518.txt".
 
-
-
 ## Flujo de trabajo
 
 En la siguiente imagen se pueden ver el flujo completo de los datos a tráves del pipeline y las herramientas útilizadas en cada uno.
@@ -34,8 +32,9 @@ Por último se intenta a través de distintos métodos o funciones que los datos
 #### Carga (Load - L)
 
 Una vez tenemos los datos limpios, podemos disponibilizarlos para su consumo. Utlizaremos MySQL para almacenar los datos y haremos la conexión a tráves de SQLalquemy, una librería de Python.
-Primero, se crearan las tablas con sus datos correspondiente
-En nuestro caso de cargan los datos guardados (y transformados) en el dataframe directo a la base de datos. 
+Primero, se crearan las tablas con sus tipos de datos acordes. 
+Se cargan los datos transformados y guardados en el dataframe directo a la base de datos, utilizando una conexión con SQLalquemy. 
+Una vez cargados todos los datos en sus tablas, se pueden hacer algunas queries para asegurarse que todo se encuentra funcionando bien. 
 
     
 ## Objetivos alcanzados
@@ -44,11 +43,3 @@ En nuestro caso de cargan los datos guardados (y transformados) en el dataframe 
 - Realizar en draw.io un diagrama de flujo de trabajo del ETL. El archivo se encuentra adjunto como ¨Diagrama_flujo.drawio¨ y se muestra arriba.
 - Se realiza una carga incremental final que es el último paso del notebook.
 - Se hicieron pruebas luego de la carga en el gestor de base de datos Workbench y las consultas 
-
-## Glosario del trabajo:
-
-
-
-
-![image](https://i.ibb.co/wg7XKZ6/Captura-de-Pantalla-2022-10-27-a-la-s-10-19-07.png)
-
